@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+  <title>MyoKare Blog</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Infoility">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <style>
+
+
+    #myCarousel .carousel-caption {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-align: left;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      text-shadow: none;
+    }
+
+    #myCarousel .list-group {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    #myCarousel .list-group-item {
+      border-radius: 0px;
+      cursor: pointer;
+    }
+
+    #myCarousel .list-group .active {
+      background-color: #eee;
+    }
+
+    @media (min-width: 992px) {
+      #myCarousel {
+        padding-right: 33.3333%;
+      }
+      #myCarousel .carousel-controls {
+        display: none;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .carousel-caption p,
+      #myCarousel .list-group {
+        display: none;
+      }
+    }
+  </style>
+
+  <script type="text/javascript" src="js/calendar.js"></script>
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/myokare-style.css">
+
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+  <!-- PRE LOADER -->
+  <section class="preloader">
+    <div class="spinner">
+
+      <span class="spinner-rotate"></span>
+
+    </div>
+  </section>
+
+
+  <!-- MENU -->
+  <section class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+        </button>
+
+        <!-- lOGO TEXT HERE -->
+        <a href="blog.html" class="navbar-brand">
+          <i class="fa faNew fa-heartbeat"></i> Healthy Living - Official Blog of MyoKare </a>
+      </div>
+
+      <!-- MENU LINKS -->
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="blog.html" class="smoothScroll">Home</a>
+          </li>
+          <li>
+            <a href="#articles" class="smoothScroll">Articles</a>
+          </li>
+          <li>
+            <a href="profile.html" class="smoothScroll">About</a>
+        </li>
+        <li>
+            <a href="index.html" target="_blank" class="navbar-brand">
+                <i class="fa fa-pagelines"></i> MyoKare</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section>
+
+    <div class="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+          <div class="item active">
+            <img src="http://placehold.it/760x400/cccccc/ffffff">
+            <div class="carousel-caption">
+              <h4>
+                <a href="blog.html">Post Title</a>
+              </h4>
+              <p>Post 1 content description
+                <a class="label label-primary" href="blog.html">View Post</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Item -->
+
+          <div class="item">
+            <img src="http://placehold.it/760x400/999999/cccccc">
+            <div class="carousel-caption">
+              <h4>
+                <a href="blog-post-1.html">Post Title</a>
+              </h4>
+              <p>Post 2 content description
+                <a class="label label-primary" href="blog-post-1.html">View Post</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Item -->
+
+          <div class="item">
+            <img src="http://placehold.it/760x400/dddddd/333333">
+            <div class="carousel-caption">
+              <h4>
+                <a href="blog-post-2.html">Post Title</a>
+              </h4>
+              <p>Post 3 content description
+                <a class="label label-primary" href="blog-post-2.html">View Post</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Item -->
+
+          <div class="item">
+            <img src="http://placehold.it/760x400/dddddd/333333">
+            <div class="carousel-caption">
+              <h4>
+                <a href="blog-post-2.html">Post Title</a>
+              </h4>
+              <p>Post 4 content description
+                <a class="label label-primary" href="blog-post-2.html">View Post</a>
+              </p>
+            </div>
+          </div>
+          <!-- End Item -->
+
+        </div>
+        <!-- End Carousel Inner -->
+
+
+        <ul class="list-group col-sm-4">
+          <li data-target="#myCarousel" data-slide-to="0" class="list-group-item active">
+            <h4>Post 1</h4>
+          </li>
+          <li data-target="#myCarousel" data-slide-to="1" class="list-group-item">
+            <h4>Post 2</h4>
+          </li>
+          <li data-target="#myCarousel" data-slide-to="2" class="list-group-item">
+            <h4>Post 3</h4>
+          </li>
+          <li data-target="#myCarousel" data-slide-to="3" class="list-group-item">
+            <h4>Post 4</h4>
+          </li>
+        </ul>
+
+        <!-- Controls -->
+        <div class="carousel-controls">
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+
+      </div>
+      <!-- End Carousel -->
+  </section>
+  <!-- NEWS DETAIL -->
+  <section id="news-detail" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-7">
+          <!-- NEWS THUMB -->
+          <div class="news-detail-thumb">
+            <div class="news-image">
+              <img src="images/post1_image.jpg" class="img-responsive" alt="">
+            </div>
+            <h3>Total Knee Arthroplasty</h3>
+            <kbd>11 June 2018 | Dr.Chandrakanthan</kbd>
+            <p>Total knee arthoplasty (TKA) or total knee replacement (TKR) is a orthopaedic surgical procedure where the articular
+              surfaces of the knee, the femoral condyles and tibial plateau, are replaced. There is at least one polyethylene
+              piece, placed between the tibia and the femur, as a shock absorber.In 50% of the cases the patella is also
+              replaced. The aim of the patella reconstruction is to restore the extensor mechanism. The level of bone loss
+              will dictate which kind of patella prosthesis is placed. The main clinical reason for the operation is osteoarthritis
+              with the goal of reducing an individuals pain and increasing function.
+            </p>
+            <blockquote>Stiffness is the most common complaint following primary total knee replacement, affecting approximately 6 to
+              7% of patients undergoing surgery.</blockquote>
+
+            <p>Reasons for a patella replacement are </p>
+
+            <ul>
+              <li>Osteolysis</li>
+              <li>Maltracking of the patella</li>
+              <li>Failure of the implant</li>
+            </ul>
+            <div class="news-social-share">
+              <h4> Share this Article</h4>
+              <a href="#" class="btn btn-primary">
+                <i class="fa fa-facebook"></i>Facebook</a>
+              <a href="#" class="btn btn-success">
+                <i class="fa fa-twitter"></i>Twitter</a>
+              <a href="#" class="btn btn-danger">
+                <i class="fa fa-google-plus"></i>Google+</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-5">
+          <div class="news-sidebar">
+            <div class="news-author">
+              <h4>About the author</h4>
+              <figure class="profile wow" data-wow-delay="1s">
+                <img src="images/author-image2.jpg" class="img-responsive" alt="">
+                <figcaption>
+                  <a href="profile.html"><h3>Dr. Chandrakanthan</h3></a>
+                  <p>Over 10 years of Physiotherapy practitioner. Specialist in Orthopedic Rehabilitation and Yoga Therapy.</p>
+                </figcaption>
+              </figure>
+
+            </div>
+
+            <div class="recent-post">
+              <h4>Recent posts</h4>
+
+              <div class="media">
+                <div class="media-object pull-left">
+                  <a href="#">
+                    <img src="images/post2_image.jpg" class="img-responsive" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="blog-post-1.html">Surgeryless Healing</a>
+                  </h4>
+                </div>
+              </div>
+
+              <div class="media">
+                <div class="media-object pull-left">
+                  <a href="#">
+                    <img src="images/post3_image.jpg" class="img-responsive" alt="">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="blog-post-2.html">How to prevent a sports injury?</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="news-ads sidebar-ads">
+                                   <h4> Ad</h4>
+                              </div> -->
+
+            <div class="news-tags">
+              <h4>Tags</h4>
+              <li>
+                <a href="#">Physiotherapy</a>
+              </li>
+              <li>
+                <a href="#">Cardio</a>
+              </li>
+              <li>
+                <a href="#">Sports Injuries</a>
+              </li>
+              <li>
+                <a href="#">Senior Citizen</a>
+              </li>
+              <li>
+                <a href="#">Rehab Programs</a>
+              </li>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#">Previous</a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer data-stellar-background-ratio="5">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 col-sm-4">
+          <div class="footer-thumb">
+            <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact</h4>
+            <p>More information is provided by phone or whatsapp
+              <br> or e-mail.</p>
+
+            <div class="contact-info">
+              <p>
+                <i class="fa fa-phone"></i> +91 9152182039</p>
+              <p>
+                <i class="fa fa-envelope-o"></i>
+                <a href="#">info@myokare.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4">
+          <div class="footer-thumb">
+            <h4 class="wow fadeInUp" data-wow-delay="0.4s">Facebook Page</h4>
+
+            <div class="calendar">
+
+        
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4">
+          <div class="footer-thumb">
+            <div class="opening-hours">
+              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Location</h4>
+              <p>No: 19, Neeli Veerasamy Street,
+                <span>Triplicane</span>
+              </p>
+              <p>Off Pycrofts Road, Near A2B Restaurant
+                <span></span>
+              </p>
+              <p>Chennai 600005
+                <span></span>
+              </p>
+              <p>
+                <span class="fa fa-clock-o"> 08:00 AM - 08:00 PM</span>
+              </p>
+            </div>
+
+            <ul class="social-icon">
+              <li>
+                <a href="https://www.facebook.com/pg/myokare" class="fa fa-facebook-square"></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/myokare" class="fa fa-twitter"></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/myokare" class="fa fa-instagram"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-sm-12 border-top">
+          <div class="col-md-4 col-sm-6">
+            <div class="copyright-text">
+              <p>Copyright &copy; 2018 Infoility</p>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-2 text-align-center">
+            <div class="angle-up-btn">
+              <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s">
+                <i class="fa fa-angle-up"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      var clickEvent = false;
+      $('#myCarousel').carousel({
+        interval: 4000
+      }).on('click', '.list-group li', function () {
+        clickEvent = true;
+        $('.list-group li').removeClass('active');
+        $(this).addClass('active');
+      }).on('slid.bs.carousel', function (e) {
+        if (!clickEvent) {
+          var count = $('.list-group').children().length - 1;
+          var current = $('.list-group li.active');
+          current.removeClass('active').next().addClass('active');
+          var id = parseInt(current.data('slide-to'));
+          if (count == id) {
+            $('.list-group li').first().addClass('active');
+          }
+        }
+        clickEvent = false;
+      });
+    })
+
+    $(window).load(function () {
+      var boxheight = $('#myCarousel .carousel-inner').innerHeight();
+      var itemlength = $('#myCarousel .item').length;
+      var triggerheight = Math.round(boxheight / itemlength + 1);
+      $('#myCarousel .list-group-item').outerHeight(triggerheight);
+    });
+  </script>
+</body>
+
+</html>
